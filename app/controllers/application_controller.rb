@@ -13,3 +13,4 @@ class ApplicationController < ActionController::Base
     "#{@name} <#{@email}>"
   end
 end
+end
