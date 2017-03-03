@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
- class User
+  class User
   attr_accessor :name, :email
 
   def initialize(attributes = {})
@@ -12,5 +12,5 @@ class ApplicationController < ActionController::Base
   def formatted_email
     "#{@name} <#{@email}>"
   end
-end
+  end
 end
